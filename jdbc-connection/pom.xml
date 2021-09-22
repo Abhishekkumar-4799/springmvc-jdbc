@@ -12,8 +12,8 @@
   <url>http://www.example.com</url>
 
   <properties>
-  	<springframework.version>5.3.8.RELEASE</springframework.version>
-	<springsecurity.version>5.5.1.RELEASE</springsecurity.version>
+  	<springframework.version>5.3.8</springframework.version>
+	<springsecurity.version>5.5.1</springsecurity.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -23,27 +23,27 @@
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-webmvc</artifactId>
-  		<version>5.3.8</version>
+  		<version>${springframework.version}</version>
   	</dependency>
   <!-- spring spring-security-web -->
   	<dependency>
   <groupId>org.springframework.security</groupId>
   <artifactId>spring-security-web</artifactId>
-  <version>5.5.1</version>
+  <version>${springsecurity.version}</version>
 </dependency>
 	
   <!-- spring spring-security-config -->
   	<dependency>
     	<groupId>org.springframework.security</groupId>
    		<artifactId>spring-security-config</artifactId>
-    	<version>5.0.0.RELEASE</version>
+    	<version>${springsecurity.version}</version>
 	</dependency>
 	
 	<!-- spring security taglib -->
 	<dependency>
   		<groupId>org.springframework.security</groupId>
   		<artifactId>spring-security-taglibs</artifactId>
-  		<version>5.0.0.RELEASE</version>
+  		<version>${springsecurity.version}</version>
 	</dependency>
 		
 	<!-- Servlet, JSP and JSTL support -->

@@ -19,12 +19,12 @@ import org.springframework.security.core.userdetails.User.UserBuilder;
 public class AppSecurityConfig extends WebSecurityConfigurerAdapter{
 
 	private Logger logger = Logger.getLogger(getClass().getName());
+	
 	@Autowired
 	private DataSource dataSource;
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		AppConfig appConfig = new AppConfig();
 		logger.info("AppSecurityConfig" + "configure");
 		auth.jdbcAuthentication().dataSource(dataSource);
 	}
